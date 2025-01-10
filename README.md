@@ -19,11 +19,8 @@ Overview of the files in this repository:
 | file | description |
 |---|---|
 | shell.h | Header file containing function prototypes and macros. |
-| env_fetch.c| Verifies tokens|
-| _getenv.c | Finds the environment |
-| parse_input.c | Analyzes the user input and tokenizes it. |
-| execute_command.c |Forks process, executes a command and waits if necessary.|
-| find_or_execute_command | Checks the command input for execution.|
+| functionsfprints.c| Verifies tokens|
+| select.c | Finds the environment |
 | mainshell.c| Entry point, command line interptreter.|
 ___
 # Flowchart
@@ -45,6 +42,3 @@ ___
 10. Go back to step 2
 ___
 # AUTHORS
-This shell was created by:
-* Lucy ann [Github](https://github.com/lucyann78)
-* Hector Ruiz [Github](https://github.com/hruiz1191/)
