@@ -49,7 +49,7 @@ char *_getenv(const char *name)
 
 
 /**
- * _which - Get the path of a file
+ * _select - Get the path of a file
  *
  * @file: Name of the file to look for
  *
