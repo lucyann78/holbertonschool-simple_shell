@@ -6,17 +6,11 @@ hsh \- A simple UNIX command line interpreter
 .SH FILES
 shell.h \- Includes libraries and functions prototypes
 .br
-env_fetch.c \- Verifies tokens
+functionfprint.c \- Verifies the string entered for the commans
 .br
-_getenv.c \- Find the enviroment
+select.c \- select the command entere
 .br
-mainshell.c \- Entry point, command line interpreter
-.br
-parse_input.c \- Analyze the user input and tokenizes it
-.pr
-execute_commnad.c \- Forks process, executes a comman ans waits
-.pr
-find_or_execute_command.c \- Check the command input for execute
+mainshell.c \- the main program
 .SH DESCRIPTION
 The hsh is a UNIX command interpreter that reads user commands from the standard input and executes them. The hsh program has been designed to be similar in functionality to the standard shell, sh. The hsh program includes functionality such as parsing command lines, splitting commands into separate arguments, executing commands, and handling errors.
 .SH OPTIONS
