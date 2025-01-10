@@ -4,19 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <stddef.h>
-#include <sys/wait.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/wait.h>
 
-#define MAX_ARGS 10
-
-char *_getenv(const char *name);
-char **parse_input(char *input);
-int execute_command(char **args);
-int find_or_execute_command(char **args);
-int env_fetch(char **args, char *input, int count);
 extern char **environ;
+int get_argc(char *);
+char **get_argv(char *, int);
+void free_arr(char **);
+void free_argv(int argc, char **argv);
+char *_getenv(const char *);
+char *_select(char *);
+int execute(int, char *, char **);
+int _env(int);
+void printerrorm(void);
 
-#endif /* SHELL_H */
-
-
+#endif
